@@ -1,5 +1,5 @@
 public class Generatefield {
-    public static void main(String[] args) {
+    public static void generatefield(String[] args) {
 
         // int max = 8;
         // int min = 1;
@@ -24,4 +24,9 @@ public class Generatefield {
             System.out.println("\n");
         }
     }
+
+    public String[] getBoard() {
+        return getBoard();
+    }
+
 }
