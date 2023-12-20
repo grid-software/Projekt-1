@@ -1,6 +1,7 @@
 public class Generatefield {
     public static void main(String[] args) {
 
+        // String mit Zahlen die genutz werden
         String[][] board = { { "1", "2", "3" }, { "4", "5", "6" }, { "7", "8", "" }, };
 
         for (int i = 0; i < board.length; i++) {
