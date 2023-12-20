@@ -1,6 +1,6 @@
 public class Nummber_to_move_terminal {
 
-  public static String[] getNumbers(String[][] verschiebeSpiel){ 
+  public static String[] getNumbers(String[][] board){ 
   String[] nummern;                          //definiere Array um dem Hauptprogramm zu übergeben
 
   String x;
@@ -12,27 +12,27 @@ public class Nummber_to_move_terminal {
 
   //Erste Reihe ----------------------------------------------
   //----------------------------------------------------------
-  if (verschiebeSpiel[1][1] == "" ) {
+  if (board[1][1] == "" ) {
 
-    x = verschiebeSpiel[1][2];
-    y = verschiebeSpiel[2][1];
+    x = board[1][2];
+    y = board[2][1];
 
     nummern = new String[] {x, y};
     return nummern;
   };
 
-  if (verschiebeSpiel[1][2] == "") {
-    x = verschiebeSpiel[1][1];
-    y = verschiebeSpiel[1][3];
-    z = verschiebeSpiel[2][2];
+  if (board[1][2] == "") {
+    x = board[1][1];
+    y = board[1][3];
+    z = board[2][2];
     nummern = new String[] {x, y, z};
     return nummern;
   };
 
-  if (verschiebeSpiel[1][3] == "") {
+  if (board[1][3] == "") {
 
-    x = verschiebeSpiel[1][2];
-    y = verschiebeSpiel[2][3];
+    x = board[1][2];
+    y = board[2][3];
 
     nummern = new String[] {x, y};
     return nummern;
@@ -41,54 +41,54 @@ public class Nummber_to_move_terminal {
   //Zweite Reihe ---------------------------------------------
   //----------------------------------------------------------
 
-  if (verschiebeSpiel[2][1] == "") {
-    x = verschiebeSpiel[1][1];
-    y = verschiebeSpiel[2][2];
-    z = verschiebeSpiel[3][1];
+  if (board[2][1] == "") {
+    x = board[1][1];
+    y = board[2][2];
+    z = board[3][1];
     nummern = new String[] {x, y, z};
     return nummern;
   };
 
-  if (verschiebeSpiel[2][2] == "") {
-    x = verschiebeSpiel[1][2];
-    y = verschiebeSpiel[2][1];
-    z = verschiebeSpiel[2][3];
-    w = verschiebeSpiel[3][2];
+  if (board[2][2] == "") {
+    x = board[1][2];
+    y = board[2][1];
+    z = board[2][3];
+    w = board[3][2];
     nummern = new String[] {x, y, z, w};
     return nummern;
   };
 
-   if (verschiebeSpiel[2][3] == "") {
-    x = verschiebeSpiel[1][3];
-    y = verschiebeSpiel[2][2];
-    z = verschiebeSpiel[3][3];
+   if (board[2][3] == "") {
+    x = board[1][3];
+    y = board[2][2];
+    z = board[3][3];
     nummern = new String[] {x, y, z};
     return nummern;
   };
 
   //Dritte Reihe ---------------------------------------------
   //----------------------------------------------------------
-if (verschiebeSpiel[3][1] == "") {
+if (board[3][1] == "") {
 
-    x = verschiebeSpiel[2][1];
-    y = verschiebeSpiel[3][2];
+    x = board[2][1];
+    y = board[3][2];
 
     nummern = new String[] {x, y};
     return nummern;
   };
 
-  if (verschiebeSpiel[3][2] == "") {
-    x = verschiebeSpiel[3][1];
-    y = verschiebeSpiel[3][3];
-    z = verschiebeSpiel[2][2];
+  if (board[3][2] == "") {
+    x = board[3][1];
+    y = board[3][3];
+    z = board[2][2];
     nummern = new String[] {x, y, z};
     return nummern;
   };
 
-  if (verschiebeSpiel[3][3] == "") {
+  if (board[3][3] == "") {
 
-    x = verschiebeSpiel[3][2];
-    y = verschiebeSpiel[2][3];
+    x = board[3][2];
+    y = board[2][3];
 
     nummern = new String[] {x, y};
     return nummern;
