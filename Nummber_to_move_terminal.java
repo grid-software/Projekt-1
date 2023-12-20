@@ -1,6 +1,6 @@
 public class Nummber_to_move_terminal {   
   
-  private static String[] getNumbers(String[][] verschiebeSpiel){ 
+  public static String[] getNumbers(String[][] verschiebeSpiel){ 
   String[] nummern;                          //definiere Array um dem Hauptprogramm zu übergeben
 
   String x;
@@ -94,4 +94,5 @@ public class Nummber_to_move_terminal {
     nummern = new String[] {x, y};
     return nummern;
   };
+  return nummern;
 }}
