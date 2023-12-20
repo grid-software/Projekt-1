@@ -1,9 +1,9 @@
 public class Generatefield {
     public static void main(String[] args) {
 
-        int max = 8;
-        int min = 1;
-        int range = max - min + 1;
+        // int max = 8;
+        // int min = 1;
+        // int range = max - min + 1;
 
         String[][] board = { { "1", "4", "7" }, { "2", "6", "5" }, { "3", "8", "" }, };
 
