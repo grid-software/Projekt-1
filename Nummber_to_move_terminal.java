@@ -1,18 +1,14 @@
+// check welche Zahlen neben dem leeren Feld stehen 
+
 public class Nummber_to_move_terminal {
+  char[] nummern; // definiere Array um dem Hauptprogramm zu übergeben
 
-  public static String[] getNumbers(String[][] board){ 
-  String[] nummern;                          //definiere Array um dem Hauptprogramm zu übergeben
+    nummern=null;
 
-  String x;
-  String y;
-  String z;
-  String w;
-
-  nummern = null;
-
-  //Erste Reihe ----------------------------------------------
-  //----------------------------------------------------------
-  if (board[1][1] == "" ) {
+    // Erste Reihe ----------------------------------------------
+    // ----------------------------------------------------------
+    if(verschiebeSpiel[1][1]=" ")
+    {
 
     x = board[1][2];
     y = board[2][1];
@@ -21,15 +17,17 @@ public class Nummber_to_move_terminal {
     return nummern;
   };
 
-  if (board[1][2] == "") {
-    x = board[1][1];
-    y = board[1][3];
-    z = board[2][2];
-    nummern = new String[] {x, y, z};
+    if(verschiebeSpiel[1][2]=" ")
+    {
+    x = verschiebeSpiel[1][1];
+    y = verschiebeSpiel[1][3];
+    z = verschiebeSpiel[2][2];
+    nummern = [{x, y, z}];
     return nummern;
   };
 
-  if (board[1][3] == "") {
+    if(verschiebeSpiel[1][3]=" ")
+    {
 
     x = board[1][2];
     y = board[2][3];
@@ -41,34 +39,38 @@ public class Nummber_to_move_terminal {
   //Zweite Reihe ---------------------------------------------
   //----------------------------------------------------------
 
-  if (board[2][1] == "") {
-    x = board[1][1];
-    y = board[2][2];
-    z = board[3][1];
-    nummern = new String[] {x, y, z};
+    if(verschiebeSpiel[2][1]=" ")
+    {
+    x = verschiebeSpiel[1][1];
+    y = verschiebeSpiel[2][2];
+    z = verschiebeSpiel[3][1];
+    nummern = [{x, y, z}];
     return nummern;
   };
 
-  if (board[2][2] == "") {
-    x = board[1][2];
-    y = board[2][1];
-    z = board[2][3];
-    w = board[3][2];
-    nummern = new String[] {x, y, z, w};
+    if(verschiebeSpiel[2][2]=" ")
+    {
+    x = verschiebeSpiel[1][2];
+    y = verschiebeSpiel[2][1];
+    z = verschiebeSpiel[2][3];
+    w = verschiebeSpiel[3][2];
+    nummern = [{x, y, z, w}];
     return nummern;
   };
 
-   if (board[2][3] == "") {
-    x = board[1][3];
-    y = board[2][2];
-    z = board[3][3];
-    nummern = new String[] {x, y, z};
+    if(verschiebeSpiel[2][3]=" ")
+    {
+    x = verschiebeSpiel[1][3];
+    y = verschiebeSpiel[2][2];
+    z = verschiebeSpiel[3][3];
+    nummern = [{x, y, z}];
     return nummern;
   };
 
-  //Dritte Reihe ---------------------------------------------
-  //----------------------------------------------------------
-if (board[3][1] == "") {
+    // Dritte Reihe ---------------------------------------------
+    // ----------------------------------------------------------
+    if(verschiebeSpiel[3][1]=" ")
+    {
 
     x = board[2][1];
     y = board[3][2];
@@ -77,15 +79,17 @@ if (board[3][1] == "") {
     return nummern;
   };
 
-  if (board[3][2] == "") {
-    x = board[3][1];
-    y = board[3][3];
-    z = board[2][2];
-    nummern = new String[] {x, y, z};
+    if(verschiebeSpiel[3][2]=" ")
+    {
+    x = verschiebeSpiel[3][1];
+    y = verschiebeSpiel[3][3];
+    z = verschiebeSpiel[2][2];
+    nummern = [{x, y, z}];
     return nummern;
   };
 
-  if (board[3][3] == "") {
+    if(verschiebeSpiel[3][3]=" ")
+    {
 
     x = board[3][2];
     y = board[2][3];
